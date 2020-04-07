@@ -1,0 +1,46 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "main": "src/electron-starter.js",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "concurrently": "^5.1.0",
+    "electron": "^8.1.1",
+    "jquery": "3.2.1",
+    "jquery-ui": "^1.12.1",
+    "jquery.fancytree": "^2.34.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-es6-component": "^0.0.4",
+    "react-jstree": "^1.0.0",
+    "react-scripts": "3.4.0",
+    "underscore": "^1.9.2"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others \"yarn start\" \"npm run electron\"",
+    "start": "react-scripts start",
+    "electron": "electron .",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
